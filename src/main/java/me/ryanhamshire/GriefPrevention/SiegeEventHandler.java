@@ -83,7 +83,7 @@ public class SiegeEventHandler implements Listener
 
         if (broken != null)
         {
-            // Error Message: You do not have permission to build in <Defender>'s claim
+            // Present Error Message[BUG]: You do not have permission to build in <Defender>'s claim
             // Error messages for siege mode.
             if (!GriefPrevention.instance.config_siege_blocks.contains(broken))
                 event.setDenialReason(() -> GriefPrevention.instance.dataStore.getMessage(Messages.NonSiegeMaterial));
